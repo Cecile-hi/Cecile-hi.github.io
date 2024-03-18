@@ -1,152 +1,525 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-    <title>Xiaohui Zhang, BJTU</title>
-    <style>
-    h1 { padding : 0; margin : 0; }
-    body { padding : 20px 0; font-family : Arial; font-size : 16px; background-image : url("img/bg.png"); } 
-    #container { width : 900px; margin : 0 auto; background-color : #fff; padding : 50px;  text-align: left; box-shadow: 0px 0px 10px #999;; }
-    #me { margin-left : 25px; border : 0 solid black; float : right; margin-bottom : 0; margin-right:25px;}
-    #content { display : block; margin-right : 275px;}
-    a { text-decoration : none; }
-    a:hover { text-decoration : underline; }
-    a:link,a:visited
-    {color: #1367a7;}
-    .navigation {
-      text-align: left;
-  }
-  
-  .navigation li {
-      display: inline;
-      margin-right: 10px;
-  }
-  
-  .navigation li a {
-      padding: 10px 15px;
-      color: #007bff;
-      text-decoration: none;
-      transition: color 0.3s;
-  }
-  
-  .navigation li a:hover {
-      color: #0056b3;
-  }
-    a.invisible { color : inherit; text-decoration : inherit; }
-    .publogo { margin-top : 20px; margin-right : 10px; float : left; border : 0; width: 200px; vertical-align: middle;}
-    
-    .publication { clear : left; padding-bottom : 10px; line-height:22px;}
-    .codelogo { margin-right : 10px; float : left; border : 0;}
-    .code { clear : left; padding-bottom : 10px; vertical-align :middle;} 
-    .code .download a { display : block; margin : 0 15px; float : left;}
-    #simpsons { margin : 5px auto; text-align : center; color : #B7B7B7; }
+  <head>
+    <meta charset="utf-8">
+    <!--<style media="all">     
+      h6, h6+p {font-weight: bold;}
+    </style>-->
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
 
-    span.highlight,
-    span.highlight a:link,
-    span.highlight a:visited{color:#BB2222}
+    <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+    <meta name="description" content=""/>
+    <!-- <meta property="og:site_name" content="" /> -->
+    <meta property="og:title" content="Xiaohui Zhang" />
+    <meta property="og:description" content="Master, CASIA & BJTU" />
+    <meta property="og:url" content="https://cecile-hi.github.io/" />
+    <meta property="og:image" content="./materials/Personl.jpg" />
+    <!-- <meta property="og:type" content="website" /> -->
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
 
-    span.collaborator,
-    span.collaborator a:link,
-    span.collaborator a:visited{color:#666666}
-    </style>
+    <title>Xiaohui Zhang</title>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TYEH2DVK2"></script>
+    <script>
+      window.dataLayer=window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <script type="text/javascript">
-      function showPubs(id) {
-        if (id == 0) {
-          document.getElementById('pubs').innerHTML = document.getElementById('pubs_selected').innerHTML;
-          document.getElementById('select0').style = 'text-decoration:underline;color:#000000';
-          document.getElementById('select1').style = '';
-          // document.getElementById('select2').style = '';
-        } else if (id == 1) {
-          document.getElementById('pubs').innerHTML = document.getElementById('pubs_by_date').innerHTML;
-          document.getElementById('select1').style = 'text-decoration:underline;color:#000000';
-          document.getElementById('select0').style = '';
-        }
-      } 
+      gtag('config', 'G-3TYEH2DVK2');
     </script>
 
-</head>
-<body>
-  <!--#F2F2F2-->
-    <center>
-    <div id="container">
-    <!-- <img src="img/Wei-Chiu-Ma.jpg" align = "right" width = 200> -->
-    <img src="img/Personal_Page.png" align = "right" width = 250>
-    <div id="content">
-    <h1>Xiaohui Zhang 张晓辉</h1>
-    <ul class="navigation">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <!-- other menu items -->
-    </ul>
-    <p>
-      Interning @Institute of Automation, Chinese Academy of Science, Beijing, China<br>
-      Master Student @ CS/Beijing Jiaotong University, Beijing, China<br>
-      Bachelor @ ECE/Beijing Jiaotong University, Beijing, China<br>
-      <br>
-       <a href="mailto: 21120320@bjtu.edu.cn">Email</a> / <a href="https://scholar.google.com/citations?user=-7ZwZbMAAAAJ&hl=en">Google scholar</a></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+    
+    <!-- <meta name="twitter:title" content="Jaehong Yoon"> -->
+    <!-- <meta name="twitter:description" content="Postdoctoral Research Associate, UNC Chapel Hill"> -->
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <!-- <meta name="twitter:image" href="materials/unc_icon.png"> -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
 
-    <h2>About Me</h2>   
-    <p>I am a final year master student at <a href="https://www.bjtu.edu.cn/">Beijing Jiaotong University (BJTU)</a>. Currently, I interning at <a href="http://www.ia.cas.cn/">Institute of Automation, Chinese Academy of Science(CASIA)</a> where I am advised by <a href="https://www.au.tsinghua.edu.cn/info/1104/2986.html">Jianhua Tao</a>. My research interests mainly lie in the intersection of machine learning and multi-modal learning, with particular interests in continual learning and signal processing tasks such as Deepfake audio detection and multimodal emotion recognition.</p>
-    <p>
-    </p>
-    <p>
-    My research lies at the intersection of continual learning and multi-modal learning. Specifically, I am interested in developing continuous multimodal tools that allow us to <b>model</b>, <b>reconstruct</b>, and <b>understand</b> the dynamic world from sparse, noisy, and unconstrained sensory data.
-    <p><span class="highlight"><b>Prospective Advisers:</b></span> I am now looking for a full-time Ph.D. position in the fields of machine learning and multimodal learning. If you have any opportunities or recommendations in these areas, I would greatly appreciate your assistance. Please drop me an <a href="mailto: 21120320@bjtu.edu.cn"> email</a> directly :)
-    </p>
-  <center>
-    <table border="0" cellpadding="0" cellspacing="0" width="900" align="center" bgcolor="#FFFFFF">   
-      <tr>
-        <td width="20"></td>
-            <td width="120" align="center" valign="middle"><img src="img/bjtu.png" height="80" /></td>
-            <td width="120" align="center" valign="middle"><img src="img/tsinghua.png" height="80" /></td>            
-            <td width="120" align="center" valign="middle"><img src="img/casia.png" height="90" /></td>
-        <td width="20"></td>
-      </tr>
-  <tr>
-  <td colspan = 7>
-  <p>&nbsp;</p>
-    <h2>Recent News</h2>
-    <ul>
-<!--         <li><sup><font color="red"><b>NEW</b></font></sup> <b>Seminar</b>: I co-organize the <a href="https://sites.google.com/view/visionseminar">MIT Vision and Graphics Seminar.</a> Please reach out if you are interested in presenting.</li> -->         
-        <li><sup><font color="red"><b>NEW</b></font></sup> <b>March. 2024</b>: I interned remotely at the <a href="https://www.unc.edu/"> University of North Carolina at Chapel Hill (UNC)</a> USA, under Prof. <a href='https://www.huaxiuyao.io/'>Huaxiu Yao</a> and Prof. <a href='https://cs.unc.edu/person/mohit-bansal/'>Mohit Bansal</a> about multimodal learning, our work had been accepted by <a href='https://cvpr.thecvf.com/'>CVPR 2024 </a>. Paper has already been released in <a href='https://arxiv.org/pdf/2311.10707.pdf'>[paper]</a>. Check it out!</li>
-        <li><sup><font color="red"><b>NEW</b></font></sup> <b>Dec. 10th. 2023</b>: We are pleased to announce that our recent work on continual learning & Deepfake audio detection has been accepted by the 38th Annual AAAI Conference on Artificial Intelligence conference <a href='https://aaai.org/aaai-conference/'> (AAAI 2024) </a>. The paper and code has already been released in <a href='https://arxiv.org/abs/2312.09651'>[paper]</a> and <a href='https://github.com/Cecile-hi/Radian-Weight-Modification'>[github]</a>. Check it out!</li>
-        <li><sup><font color="red"><b>NEW</b></font></sup> <b>April. 2023</b>: Our work on continual learning & Deepfake audio detection has been accepted by the Fortieth International Conference on Machine Learning <a href='https://icml.cc/'> (ICML 2023) </a>. The paper and code has already been released in <a href='https://arxiv.org/abs/2308.03300'>[paper]</a> and <a href='https://github.com/Cecile-hi/Regularized-Adaptive-Weight-Modification'>[github]</a>. Check it out!</li>
-        <br>
-        <li><b>Dec. 15th. 2023</b>: Our recent work about using multi-view entropy for robust deepfake audio detection has been accepted by the 2024 IEEE International Conference on Acoustics, Speech, and Signal Processing <a href='https://2024.ieeeicassp.org/'> (ICASSP 2024) </a>. The paper and code will be released in recent days. </li>                  
-        <!-- <li><sup><font color="red"><b>NEW</b></font></sup> <b>Mar. 2023</b>: Check out our latest effort on closed-loop sensor simulation, LiDAR generation, and thermal imaging!</li>                -->
-        <li><b>June. 2023</b>: Three papers accepted to the 32nd International Joint Conference on Artificial Intelligence <a href='https://ijcai-23.org/'> (IJCAI 2023 DADA Workshop) </a>. Check out our work on Deepfake Audio Detection & LoRA <a href='https://arxiv.org/pdf/2306.05617.pdf'>[papers]</a></li>      
-        <li> <b>August. 2023</b>: One paper accepted to the 3th CAAI International Conference on Artificial Intelligence <a href='https://cicai.caai.cn/#/'> (CICAI 2023) </a>. Check out our work on Time-Sparse Transducer for Speech Recognition <a href='https://arxiv.org/pdf/2307.08323.pdf'>[paper]</a></li>      
-        <li><b>June. 2023</b>: One paper on Deepfake Audio Detection has been submitted to the IEEE Transactions on Pattern Analysis and Machine Intelligence <a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34'> (TPAMI) </a>.</li>
-        <li><b>June. 2021</b>: Our work (A multilingual framework based on pre-training model for speech emotion recognition) is accepted to the Asia-Pacific Signal and Information Processing Association Annual Summit and Conference 2021 <a href='http://www.apsipa.org/proceedings/2021/HTML/index.html'> (APSIPA 2021) </a>! Check it out! <a href='http://www.apsipa.org/proceedings/2021/pdfs/0000750.pdf'>[paper]</a></li>
-       <li><b>June. 2021</b>: I graduated from the EECS department of <a href='https://www.bjtu.edu.cn/'> BJTU </a> --- thanks Mangui Liang for all your support in the past four years!</li>        
-               
-    </ul>
-    </td>
-    </tr>
-<td colspan = 7>
-  <h2 id="misc">Misc.</h2>
-  <ul>
-      <li> I enjoy playing/watching all kinds of sports, including but not limited to basketball, football, tennis, running, etc. My favorite sports players and my favorite games (click their names!) are: 
-        <ul>
-        <li><a href="https://youtu.be/1Dv63K05MzQ?si=ESpGvLR-XxwF53wk">Kyrie Irving</a> (basketball) </li>
-        <li> <a href="https://www.youtube.com/watch?v=rctOtFOXco8">Roger Federer</a> (tennis)</li>
-        <li> <a href="https://youtu.be/FuiJHJz4f5Q?si=FX8sncEXlWW_VHHl">Usain Bolt</a> (running)</li>
-        </ul>
-      </li>
-      <br>
-      <li> I like chinese GuFeng music and french folk, my favorite singer is <a href="https://en.wikipedia.org/wiki/C%C3%A9cile_Corbel">Cécile Corbel</a>. <!-- Here are a few personal favorite songs: -->      
-      </li>
-      <br>
-      <li> A few personal favorite papers/books/courses can be found <a href="misc/favorite-books-papers.html">here</a> (unordered and unfinished).</li>
-  </ul>
-  </td>
-  </tr>   
-<!--
-<tr>
-<!-- End of StatCounter Code for Default Guide -->
+    <!-- Fonts & Icons -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
-<script>showPubs(1);</script>
-</body>
+    <link rel="stylesheet" href="./showMeTheMoney.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <script language="javascript">
+      function show( elem ) {
+          var x=document.getElementById(elem);
+          if (x.style.display === "block") {x.style.display="none";}
+          else {x.style.display="block";}
+      }
+    </script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+  </script>
+  <link rel="icon" type="image/x-icon" href="materials/unc_icon.png">
+  </head>
+
+  
+  <a name="top"></a>
+  <body>
+    <div class="container resume"  style="margin-top: 3em">
+      <!-- Profile Start -->
+      <div class="row mt-2">
+        <div class="col-md-3 col-sm-12 pb-3 text-md-right text-center">
+          <img class="img-fluid rounded profile-img" src="./materials/Personl.jpg" alt="Profile">
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <div class="row">
+            <div class="col text-center text-md-left">
+              <h3 class="darkgray bbbold">Dr. Xiaohui Zhang</h3>              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col pt-3">
+              <div class="row pb-2">
+                <div class="col-12">
+                  <a class="note bbbold" style="font-size:1.3em">Master candidate, CASIA & BJTU</a>
+                </div>
+                <div class="col-12">
+                  <a class="note" style="font-size:1.1em">Intelligent Building, No. 95, Zhongguancun East Road, Haidian District, Beijing</a>
+                </div>              
+                <div class="col-12">
+                  <a class="note" style="font-size:1.1em">xiaohuizhang@bjtu.edu.cn</a>
+                </div>              
+              </div>
+              <div class="row pb-2">
+                <p class="col-9">
+                  <a href="https://github.com/Cecile-hi" target="_blank" title="GitHub"><i class="fab fa-github" style="font-size: 1.8em;"></i></a>&nbsp&nbsp&nbsp 
+                  <!-- <a href="https://twitter.com/jaeh0ng_yoon" target="_blank" title="Twitter"><i class="fab fa-twitter" style="font-size: 1.8em;"></i></a>&nbsp&nbsp&nbsp  -->
+                  <!-- <a href="https://www.linkedin.com/in/jaehongyoon/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 1.8em;"></i></a>&nbsp&nbsp&nbsp  -->
+                  <a href="https://scholar.google.com/citations?user=-7ZwZbMAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar" style="font-size: 1.8em;"></i></a>&nbsp&nbsp 
+                  <a href="./materials/xiaohui-cv.pdf" target="_blank" class="bbold" style="font-size:1.5em"><b>CV</b></a>                                    
+                </p>                                
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div >
+      <!-- Profile End -->
+      <hr />
+      <!-- News Start -->
+      <div class="row pt-2">                
+        <!--<div class="row">-->
+          <div class="col-12 col-md-2">
+            <h3 class="secfont text-md-right">News</h3>
+          </div>
+          <div class="col-12 col-md-10 no-gutters">
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left">
+                <b class="bbold" style="color:#545b62;">03. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">I will join </a> <a href="https://sites.nd.edu/xiangliang-zhang/people/" target="_blank" class="note"  style="color:#2980f1;">MINE Lab</a>
+                <a class="note"> at University of Notre Dame as a PhD Student, working with </a>
+                <a href="https://sites.nd.edu/xiangliang-zhang/" target="_blank" class="note"  style="color:#2980f1;">Prof. Xiangliang Zhang</a><a class="note">!</a></a>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left">
+                <b class="bbold" style="color:#fa8072;">02. 2024</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">One paper got accepted to </a>
+                <b class="note" style="color:#f53333;">CVPR 2024</b>.
+                :<i class="note">"Multimodal Representation Learning by Alternating Unimodal Adaptation"</i> <a href="https://arxiv.org/pdf/2311.10707.pdf" target="_blank" class="note"  style="color:#2980f1;">[pdf]</a>                
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left">
+                <b class="bbold" style="color:#fa8072;">12. 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">One paper got accepted to </a>
+                <b class="note" style="color:#f53333;">AAAI 2024</b>.
+              </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-12 text-md-left">
+                  <b class="bbold" style="color:#fa8072;">12. 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">One paper got accepted to </a>
+                  <b class="note" style="color:#f53333;">ICASSP 2024</b>.
+                </div>
+              </div>
+            <div class="row no-gutters">
+                <div class="col-12 text-md-left">
+                  <b class="bbold" style="color:#545b62;">08. 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="note">One paper got accepted to</a>
+                  <b class="note" style="color:#f53333;">CICAI 2023 </b> 
+                  <!-- <a class="note"> on deepfake detection on Generative speech </a> <b class="note" style="color:#f53333;">(Oral)</b>.</a>              -->
+                  <!-- <b style="color:#f53333;">ECCV 2022 Workshop</b><a class="note"> on Computational Aspects of Deep Learning (CADL).</a>              -->
+                </div>
+              </div>
+            <div class="row no-gutters">
+              <div class="col-12 text-md-left">
+                <b class="bbold" style="color:#545b62;">06. 2023</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="note">Three papers got accepted to</a>
+                <b class="note" style="color:#f53333;">IJCAI 2023 Workshop</b> 
+                <a class="note"> on deepfake detection on Generative speech </a> <b class="note" style="color:#f53333;">(Oral)</b>.</a>             
+                <!-- <b style="color:#f53333;">ECCV 2022 Workshop</b><a class="note"> on Computational Aspects of Deep Learning (CADL).</a>              -->
+              </div>
+            </div>          
+      </div>
+      <hr />
+      <!-- Introduce Start -->
+      <div class="row pt-2">
+        <div class="col-12 col-md-2">
+          <h3 class="secfont text-md-right">Intro</h3>
+        </div>
+        <div class="col-12 col-md-10">          
+          <p class="note" style="font-size:1em"> 
+            I'm an upcoming PhD student in the 
+            <a href="https://sites.nd.edu/xiangliang-zhang/people/" target="_blank" class="bbold">MINE-Lab</a> 
+            at the <a href="https://www.nd.edu/" target="_blank" class="bbold">
+              University of Notre Dame</a>, working with 
+            <a href="https://sites.nd.edu/xiangliang-zhang/" target="_blank" class="bbold">Prof. Xiangliang Zhang</a>.            
+            Prior to joining ND, I received my Master degree from 
+            <a href="http://en.njtu.edu.cn/" target="_blank" class="bbold">
+              Beijing Jiaotong University (BJTU)</a> in 2024, advised by 
+            <a href="http://faculty.bjtu.edu.cn/1633/" target="_blank" class="bbold">Prof. Mangui Liang</a>,            
+            <!-- and won <b style="color:#f53333;"><a class="note">the best Ph.D. Dissertation Award</b>  -->
+              <!-- from the KAIST College of Engineering and School of Computing. -->
+            During my M.S. study, I interned at Institute of Automation Chinese Academy of Sciences (CASIA), 
+            mentored by <a href="https://www.au.tsinghua.edu.cn/info/1080/3219.htm" target="_blank" class="bbold">Prof. Jianhua Tao</a>,
+            and worked as a short-term interning student at the UNC Chapel Hill, 
+            hosted by <a href="https://www.huaxiuyao.io/" target="_blank" class="bbold">Prof. Huaxiu Yao</a>.            
+            <br>            
+          </p>
+          <a class="note" style="font-size:1em">
+            My research interest includes following topics:            
+          </a>
+            <li><b class="bbold darkgray">Efficient Deep Learning:</b> <span class="authors">Continual Learning, Domain Adaptation, Out-of-Distribution</span></li>
+            <li><b class="bbold darkgray">Multimodal Learning:</b> <span class="authors">Multimodal LLM, Multimodal Information Understanding, and Generation</span></li>
+            <li><b class="bbold darkgray">Learning with Real-world Data:</b> <span class="authors">Self-supervised Learning and Input Selective Learning</span></li>          
+          <br>
+          <p class="note" style="font-size:1em">
+            For my long-term research goal, I aim to encompass broad research fields 
+            to understand humans and impact our real lives through 
+            <b>ever-evolving embodied AI systems with multiple agents & modalities</b>.
+            In particular, I've been focusing on tackling practical and real-world challenges 
+            in various research domains, including continual learning, multimodal learning (w/ audio, video, language, etc), online/streaming learning, and LLMs.
+          </p>
+        </div>        
+      </div>
+      <!-- Introduce End -->
+      <hr />
+      <!-- Preprints Start -->
+      <div class="row pt-2">
+        <div class="col-md-1 col-12"></div>
+        <div class="col-md-11 col-12">
+          <h3 class="secfont text-md-left"> Recent Preprints</h3>
+          <p class="ssmall authors">(*: equal contribution)            
+          </p><br>
+
+          <div class="row mt-2">
+            <div class="col-md-1 pb-3 text-md-right text-left"></div>
+            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+              <img class="img-fluid rounded paper-img" src="./img/P1.PNG" alt="concept" >
+            </div>
+            <div class="col-md-7 col-sm-12 text-md-left text-center">              
+              <div class="col text-left text-md-left">
+                <h6 class="darkgray"><b>[P1] Audio Deepfake Detection: A Survey</b></h6>
+                <p class="ssmall authors">Jiangyan Yi, Chenglong Wang, Jianhua Tao, <u><b>Xiaohui Zhang</b></u>, Chuyuan Zhang, and Yan Zhao</p>
+                <h6 class="pprint">arXiv 2023</h6>
+                <h6 class="black">
+                  <!-- <a href="https://crema-videollm.github.io/" target="_blank"><span class="badge badge-project">Project Page</span></a> -->
+                  <a href="https://arxiv.org/pdf/2308.14970.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
+                  <!-- <a href="https://github.com/Yui010206/CREMA" target="_blank"><span class="badge badge-code">Code</span></a> -->
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp6')">BibTeX</a>          
+                </h6>
+                <div id="bibp6"  class="popup">
+                  @article{yi2023deepfake,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;title={Audio Deepfake Detection: A Survey},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;author={Jiangyan Yi, Chenglong Wang, Jianhua Tao, Xiaohui Zhang, Chuyuan Zhang and Yan Zhao},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2308.14970},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;year={2023},<br>                
+                  }
+                </div>        
+              </div>                            
+            </div>
+          </div>
+          <hr />
+      </div>
+      <!-- Preprints End -->
+      <hr />
+      <!-- Publication Start -->
+      <div class="row pt-2">
+        <div class="col-md-1 col-12"></div>
+        <div class="col-md-11 col-12">
+          <h3 class="secfont text-md-left">Publications</h3>
+          <br>
+                    
+          <div class="row mt-2">
+            <div class="col-md-1 pb-3 text-md-right text-left"></div>
+            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+              <img class="img-fluid rounded paper-img" src="./img/MLA_framework.png" alt="concept" >
+            </div>
+            <div class="col-md-7 col-sm-12 text-md-left text-center">              
+              <div class="col text-left text-md-left">
+                <h6 class="darkgray"><b>[C8] Multimodal Representation Learning by Alternating Unimodal Adaptation</b></h6>
+                <p class="ssmall authors"><u><b>Xiaohui Zhang</b></u>, Jaehong Yoon, Mohit Bansal, and Huaxiu Yao</p>
+                <h6 class="conf">CVPR 2024</h6>
+                <h6 class="black">
+                  <a href="https://arxiv.org/pdf/2311.10707.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
+                  <a href="https://github.com/Cecile-hi/Multimodal-Learning-with-Alternating-Unimodal-Adaptation" target="_blank"><span class="badge badge-code">Code</span></a>
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp3')">BibTeX</a>          
+                </h6>
+                <div id="bibp3"  class="popup">
+                  @inproceedings{zhang2024multimodal,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;title={Multimodal Representation Learning by Alternating Unimodal Adaptation},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;author={Zhang, Xiaohui and Yoon, Jaehong and Bansal, Mohit and Yao, Huaxiu},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>                
+                  }
+                </div>        
+              </div>                            
+            </div>
+          </div>
+          <hr />
+          <div class="row mt-2">
+            <div class="col-md-1 pb-3 text-md-right text-left"></div>
+            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+              <img class="img-fluid rounded paper-img" src="./img/eowm.PNG" alt="concept" >
+            </div>
+            <div class="col-md-7 col-sm-12 text-md-left text-center">              
+              <div class="col text-left text-md-left">
+                <h6 class="darkgray"><b>[J1] The Elastic Orthogonal Weight Modification for Synthetic Audio Detection in Continual Learning</b></h6>
+                <p class="ssmall authors"><u><b>Xiaohui Zhang</b></u>, Jiangyan Yi, Jianhua Tao, and Junzuo Zhou</p>
+                <h6 class="conf">Journal of Computer Research and Development</h6>
+                <h6 class="black">
+                  <a href="https://kns.cnki.net/KXReader/Detail?invoice=mXPSACBSgrVvGAC1HUz6%2FuQ%2BCv0g2ovBFmODCyWYj%2FScbvi1ZLUs6SU%2B68cuuCH8iRuYfHNCvQ4o%2FhkL%2FloR1IxebXN8%2BXCuUJMEIM0t58KYdgHRfGcagrQAW57kIjQjGz3z5njkRiNmxOnXe7ysJEesrOpsQ9Gnapx3doRG7PI%3D&DBCODE=CAPJ&FileName=JFYZ2024030400B&TABLEName=capjlast&nonce=CD29A9B9CCD946B0B95292D7BB0EFE6B&TIMESTAMP=1710763530259&uid=" target="_blank"><span class="badge badge-pdf">Paper</span></a>                  
+                  <!-- <a href="https://github.com/Cecile-hi/Multimodal-Learning-with-Alternating-Unimodal-Adaptation" target="_blank"><span class="badge badge-code">Code</span></a> -->
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibp3')">BibTeX</a>          
+                </h6>
+                <div id="bibp3"  class="popup">
+                  @inproceedings{zhang2024eowm,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;title={The Elastic Orthogonal Weight Modification for Synthetic Audio Detection in Continual Learning},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;author={Xiaohui Zhang, Jiangyan Yi, Jianhua Tao, and Junzuo Zhou},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={Proceedings of the Journal of Computer Research and Development},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>                
+                  }
+                </div>        
+              </div>                            
+            </div>
+          </div>
+          <hr />
+          <div class="row mt-2">
+            <div class="col-md-1 pb-3 text-md-right text-left"></div>
+            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+              <img class="img-fluid rounded paper-img" src="./img/AAAI_poster_zxh.png" alt="concept" >
+            </div>
+            <div class="col-md-7 col-sm-12 text-md-left text-center">
+              <div class="col text-left text-md-left">
+                <h6 class="darkgray"><b>[C7] What to remember: Self-adaptive continual learning for audio deepfake detection </b></h6>
+                <p class="ssmall authors"><u><b>Xiaohui Zhang</b></u>, Jiangyan Yi, Chenglong Wang, Chuyuan Zhang, Siding Zeng, and Jianhua Tao</p>
+                <h6 class="conf">AAAI 2024</h6>
+                <h6 class="black">
+                  <!-- <a href="https://ecoflap.github.io/" target="_blank"><span class="badge badge-project">Project Page</span></a> -->
+                  <a href="https://arxiv.org/pdf/2312.09651.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+                  <a href="https://github.com/Cecile-hi/Radian-Weight-Modification" target="_blank"><span class="badge badge-code">Code</span></a>
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc16')">BibTeX</a>          
+                </h6>
+                <div id="bibc16"  class="popup">
+                  @inproceedings{zhang2024rwm,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;title={What to Remember: Self-Adaptive Continual Learning for Audio Deepfake Detection},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;author={Xiaohui Zhang, Jiangyan Yi, Chenglong Wang, Chuyuan Zhang, Siding Zeng, and Jianhua Tao},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={Annual AAAI Conference on Artificial Intelligence},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>                  
+                  }
+                </div>
+              </div>      
+            </div>
+          </div>
+          <hr/>
+          <div class="row mt-2">
+            <div class="col-md-1 pb-3 text-md-right text-left"></div>
+            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+              <img class="img-fluid rounded paper-img" src="./img/IJCAI_workshop_adaptive.PNG" alt="concept" >
+            </div>
+            <div class="col-md-7 col-sm-12 text-md-left text-center">              
+              <div class="col text-left text-md-left">
+                <h6 class="darkgray"><b>[C6, W3] Adaptive Fake Audio Detection with Low-Rank Model Squeezing</b></h6>
+                <p class="ssmall authors"><u><b>Xiaohui Zhang</b></u>, Jiangyan Yi, Jianhua Tao, Chenlong Wang, Le Xu, Ruibo Fu</p>
+                <!-- <h6 class="pprint">NeurIPS 2023 on Instruction Tuning and Instruction Following</h6> -->
+                <b class="ssmall authors"><b>IJCAI 2023</b></b>&nbsp;<b><b class="ssmall authors">Workshop on Deepfake Audio Detection and Analysis</b></b>
+                <h6 class="conf">IJCAI 2023</h6>
+                <h6 class="black">
+                  <a href="https://arxiv.org/pdf/2306.04956.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+                  <!-- <a href="https://github.com/YiyangZhou/LURE" target="_blank"><span class="badge badge-code">Code</span></a> -->
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc15')">BibTeX</a>          
+                </h6>
+                <div id="bibc15"  class="popup">
+                  @inproceedings{Zhang2023adaptive,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;title={Adaptive Fake Audio Detection with Low-Rank Model Squeezing},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;author={Xiaohui Zhang, Jiangyan Yi, Jianhua Tao, Chenlong Wang, Le Xu, Ruibo Fu},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Joint Conference on Artificial Intelligence},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;year={2023},<br>                
+                  }
+                </div>
+              </div> 
+            </div>
+          </div>          
+          <hr />
+          <div class="row mt-2">
+            <div class="col-md-1 pb-3 text-md-right text-left"></div>
+            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+              <img class="img-fluid rounded paper-img" src="./img/IJCAI_wcl2.PNG" alt="concept" >
+            </div>
+            <div class="col-md-7 col-sm-12 text-md-left text-center">              
+              <div class="col text-left text-md-left">
+                <h6 class="darkgray"><b>[C5, W2] Low-rank Adaptation Method for Wav2vec2-based Fake Audio Detection</b></h6>
+                <p class="ssmall authors">Chenlong Wang, Jiangyan Yi, <u><b>Xiaohui Zhang</b></u> Jianhua Tao, Le Xu, Ruibo Fu</p>
+                <!-- <h6 class="pprint">NeurIPS 2023 on Instruction Tuning and Instruction Following</h6> -->
+                <b class="ssmall authors"><b>IJCAI 2023</b></b>&nbsp;<b><b class="ssmall authors">Workshop on Deepfake Audio Detection and Analysis</b></b>
+                <h6 class="conf">IJCAI 2023</h6>
+                <h6 class="black">
+                  <a href="https://arxiv.org/pdf/2306.05617.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+                  <!-- <a href="https://github.com/YiyangZhou/LURE" target="_blank"><span class="badge badge-code">Code</span></a> -->
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc15')">BibTeX</a>          
+                </h6>
+                <div id="bibc15"  class="popup">
+                  @inproceedings{wang2023lowrank,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;title={Low-rank Adaptation Method for Wav2vec2-based Fake Audio Detection},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;author={Chenglong Wang, Jiangyan Yi, Xiaohui Zhang, Jianhua Tao, Le Xu, Ruibo Fu},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Joint Conference on Artificial Intelligence},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;year={2023},<br>                
+                  }
+                </div>
+              </div> 
+            </div>
+          </div>          
+          <hr />
+          <div class="row mt-2">
+            <div class="col-md-1 pb-3 text-md-right text-left"></div>
+            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+              <img class="img-fluid rounded paper-img" src="./img/add.png" alt="concept" >
+            </div>
+            <div class="col-md-7 col-sm-12 text-md-left text-center">              
+              <div class="col text-left text-md-left">
+                <h6 class="darkgray"><b>[C4, W1] ADD 2023: the Second Audio Deepfake Detection Challenge</b></h6>
+                <p class="ssmall authors">Jiangyan Yi, Jianhua Tao, Ruibo Fu, Xinrui Yan, Chenglong Wang, Tao Wang, Chu Yuan Zhang, 
+                  <u><b>Xiaohui Zhang</b></u>, Yan Zhao, Yong Ren, Le Xu, Junzuo Zhou, Hao Gu, Zhengqi Wen, Shan Liang, Zheng Lian, Shuai Nie, Haizhou Li</p>
+                <!-- <h6 class="pprint">NeurIPS 2023 on Instruction Tuning and Instruction Following</h6> -->
+                <b class="ssmall authors"><b>IJCAI 2023</b></b>&nbsp;<b><b class="ssmall authors">Workshop on Deepfake Audio Detection and Analysis</b></b>
+                <h6 class="conf">IJCAI 2023</h6>
+                <h6 class="black">
+                  <a href="https://arxiv.org/pdf/2305.13774.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+                  <!-- <a href="https://github.com/YiyangZhou/LURE" target="_blank"><span class="badge badge-code">Code</span></a> -->
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc15')">BibTeX</a>          
+                </h6>
+                <div id="bibc15"  class="popup">
+                  @inproceedings{yi2023add,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;title={ADD 2023: the Second Audio Deepfake Detection Challenge},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;author={Jiangyan Yi, Jianhua Tao, Ruibo Fu, Xinrui Yan, Chenglong Wang, Tao Wang, Chu Yuan Zhang, 
+                        Xiaohui Zhang, Yan Zhao, Yong Ren, Le Xu, Junzuo Zhou, Hao Gu, Zhengqi Wen, Shan Liang, Zheng Lian, Shuai Nie, Haizhou Li},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={International Joint Conference on Artificial Intelligence},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;year={2023},<br>                
+                  }
+                </div>
+              </div> 
+            </div>
+          </div>          
+          <hr /> 
+          <div class="row mt-2">
+            <div class="col-md-1 pb-3 text-md-right text-left"></div>
+            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+              <img class="img-fluid rounded paper-img" src="./img/CICAI.png" alt="concept" >
+            </div>
+            <div class="col-md-7 col-sm-12 text-md-left text-center">              
+              <div class="col text-left text-md-left">
+                <h6 class="darkgray"><b>[C3] TST: Time-Sparse Transducer for Automatic Speech Recognition</b></h6>
+                <p class="ssmall authors"><u><b>Xiaohui Zhang</b></u>, Mangui Liang, Zhengkun Tian, Jiangyan Yi, Jianhua Tao</p>
+                <h6 class="conf">CICAI 2023 </h6>
+                <h6 class="black">
+                  <a href="https://arxiv.org/pdf/2307.08323.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+                  <!-- <a href="https://github.com/ihaeyong/PNR" target="_blank"><span class="badge badge-code">Code</span></a> -->
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc14')">BibTeX</a>          
+                </h6>
+                <div id="bibc14"  class="popup">
+                  @inproceedings{zhang2023tst,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;title={TST: Time-Sparse Transducer for Automatic Speech Recognition},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;author={Xiaohui Zhang, Mangui Liang, Zhengkun Tian, Jiangyan Yi, Jianhua Tao},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={CAAI International Conference on Artificial Intelligence},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;year={2023},<br>                
+                  }
+                </div>
+                <!-- <hr/> -->
+              </div>      
+            </div>
+          </div>        
+          <hr/>
+          <div class="row mt-2">
+            <div class="col-md-1 pb-3 text-md-right text-left"></div>
+            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+              <img class="img-fluid rounded paper-img" src="./img/ICML_2114.png" alt="concept" >
+            </div>
+            <div class="col-md-7 col-sm-12 text-md-left text-center">              
+              <div class="col text-left text-md-left">
+                <h6 class="darkgray"><b>[C2] Do You Remember? Overcoming Catastrophic Forgetting for Fake Audio Detection</b></h6>
+          <p class="ssmall authors"><u><b>XiaoHui Zhang</b></u>, Jiangyan Yi, Chenglong Wang, Chu Yuan Zhang, Jianhua Tao</p>
+          <h6 class="conf">ICML 2023 </h6>
+          <h6 class="black">
+            <!-- <a href="https://hello3196.github.io/TCTS_FAS/" target="_blank"><span class="badge badge-project">Project Page</span></a> -->
+            <a href="https://arxiv.org/pdf/2308.03300.pdf" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+            <a href="https://github.com/Cecile-hi/Regularized-Adaptive-Weight-Modification" target="_blank"><span class="badge badge-code">Code</span></a>
+            <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc13')">BibTeX</a>          
+          </h6>
+          <div id="bibc13"  class="popup">
+            @article{zhang2023rawm,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;title={Do You Remember? Overcoming Catastrophic Forgetting for Fake Audio Detection},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;author={Xiaohui Zhang, Jiangyan Yi, Chenglong Wang, Chu Yuan Zhang, Jianhua Tao},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;journal={International Conference on Machine Learning},<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;year={2023},<br>                
+            }
+          </div>                  
+              </div>              
+            </div>
+          </div>         
+          <hr />          
+          <div class="row mt-2">
+            <div class="col-md-1 pb-3 text-md-right text-left"></div>
+            <div class="col-md-3 col-sm-11 pb-3 text-md-right text-left">
+              <img class="img-fluid rounded paper-img" src="./img/apsipa.PNG" alt="concept" >
+            </div>
+            <div class="col-md-7 col-sm-12 text-md-left text-center">              
+              <div class="col text-left text-md-left">
+                <h6 class="darkgray"><b>[C1] A multilingual framework based on pre-training model for speech emotion recognition</b></h6>
+                <p class="ssmall authors">Zhaohang Zhang, <u><b>Xiaohui Zhang</b></u>, Min Guo, Wei-Qiang Zhang, Ke Li, Yukai Huang</p>
+                <h6 class="conf">APSIPA 2021 </h6>
+                <h6 class="black">
+                  <a href="https://ieeexplore.ieee.org/abstract/document/9689534" target="_blank"><span class="badge badge-pdf">Paper</span></a>
+                  <a type="button" class="badge badge-bibtex" href="javascript:void(0)" onclick="show('bibc12')">BibTeX</a>
+                </h6>
+                <div id="bibc12"  class="popup">
+                  @inproceedings{zhang2021mlf,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;title={A multilingual framework based on pre-training model for speech emotion recognition},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;author={Zhaohang Zhang, Xiaohui Zhang, Min Guo, Wei-Qiang Zhang, Ke Li, Yukai Huang},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={Asia-Pacific Signal and Information Processing Association Annual Summit and Conference},<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;year={2021},<br>
+                  }
+                </div>               
+              </div>              
+            </div>
+          </div>
+          <hr/>
+      
+      <!-- Footer Start -->
+      <div class="row">
+        <div class="col footer-cover">
+          <div class="footer text-center small">
+            <div>Last modified:&nbsp<c class="badge badge-secondary">02. 26. 2024.</c></div>              
+            <a href="#top">Back to top of page</a>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+    </div>
+  </body>
 </html>
